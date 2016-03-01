@@ -9,7 +9,7 @@
 <tr><td>Usuario</td><td>eMail</td></tr>
 <?php
 	$conn = new mysqli(getenv("MYSQL_HOST"),getenv("MYSQL_USER"),getenv("MYSQL_PASSWORD"),getenv("MYSQL_DB"));
-	$SQL  = "select * from users";
+	$SQL  = "select * from user";
 	$results = $conn->query($SQL);
 	while ($user = $results->fetch_assoc()){
 	?>
